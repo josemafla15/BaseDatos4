@@ -1,0 +1,1106 @@
+2026-03-25 01:11:23.325 UTC [7640] LOG:  starting PostgreSQL 16.13 (Ubuntu 16.13-0ubuntu0.24.04.1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, 64-bit
+2026-03-25 01:11:23.326 UTC [7640] LOG:  listening on IPv6 address "::1", port 5433
+2026-03-25 01:11:23.326 UTC [7640] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-03-25 01:11:23.343 UTC [7640] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5433"
+2026-03-25 01:11:23.351 UTC [7650] LOG:  database system was shut down at 2026-03-25 01:11:13 UTC
+2026-03-25 01:11:23.366 UTC [7640] LOG:  database system is ready to accept connections
+2026-03-25 01:11:58.694 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.694 UTC [8088] STATEMENT:  ALTER SCHEMA public OWNER TO postgres;
+2026-03-25 01:11:58.697 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.697 UTC [8088] STATEMENT:  ALTER DOMAIN public."bıgınt" OWNER TO postgres;
+2026-03-25 01:11:58.698 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.698 UTC [8088] STATEMENT:  ALTER TYPE public.mpaa_rating OWNER TO postgres;
+2026-03-25 01:11:58.700 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.700 UTC [8088] STATEMENT:  ALTER DOMAIN public.year OWNER TO postgres;
+2026-03-25 01:11:58.702 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.702 UTC [8088] STATEMENT:  ALTER FUNCTION public._group_concat(text, text) OWNER TO postgres;
+2026-03-25 01:11:58.703 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.703 UTC [8088] STATEMENT:  ALTER FUNCTION public.film_in_stock(p_film_id integer, p_store_id integer, OUT p_film_count integer) OWNER TO postgres;
+2026-03-25 01:11:58.704 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.704 UTC [8088] STATEMENT:  ALTER FUNCTION public.film_not_in_stock(p_film_id integer, p_store_id integer, OUT p_film_count integer) OWNER TO postgres;
+2026-03-25 01:11:58.705 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.705 UTC [8088] STATEMENT:  ALTER FUNCTION public.get_customer_balance(p_customer_id integer, p_effective_date timestamp with time zone) OWNER TO postgres;
+2026-03-25 01:11:58.706 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.706 UTC [8088] STATEMENT:  ALTER FUNCTION public.inventory_held_by_customer(p_inventory_id integer) OWNER TO postgres;
+2026-03-25 01:11:58.709 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.709 UTC [8088] STATEMENT:  ALTER FUNCTION public.inventory_in_stock(p_inventory_id integer) OWNER TO postgres;
+2026-03-25 01:11:58.710 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.710 UTC [8088] STATEMENT:  ALTER FUNCTION public.last_day(timestamp with time zone) OWNER TO postgres;
+2026-03-25 01:11:58.711 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.711 UTC [8088] STATEMENT:  ALTER FUNCTION public.last_updated() OWNER TO postgres;
+2026-03-25 01:11:58.713 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.713 UTC [8088] STATEMENT:  ALTER TABLE public.customer_customer_id_seq OWNER TO postgres;
+2026-03-25 01:11:58.720 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.720 UTC [8088] STATEMENT:  ALTER TABLE public.customer OWNER TO postgres;
+2026-03-25 01:11:58.721 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.721 UTC [8088] STATEMENT:  ALTER FUNCTION public.rewards_report(min_monthly_purchases integer, min_dollar_amount_purchased numeric) OWNER TO postgres;
+2026-03-25 01:11:58.722 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.722 UTC [8088] STATEMENT:  ALTER AGGREGATE public.group_concat(text) OWNER TO postgres;
+2026-03-25 01:11:58.723 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.723 UTC [8088] STATEMENT:  ALTER TABLE public.actor_actor_id_seq OWNER TO postgres;
+2026-03-25 01:11:58.728 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.728 UTC [8088] STATEMENT:  ALTER TABLE public.actor OWNER TO postgres;
+2026-03-25 01:11:58.730 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.730 UTC [8088] STATEMENT:  ALTER TABLE public.category_category_id_seq OWNER TO postgres;
+2026-03-25 01:11:58.733 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.733 UTC [8088] STATEMENT:  ALTER TABLE public.category OWNER TO postgres;
+2026-03-25 01:11:58.734 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.734 UTC [8088] STATEMENT:  ALTER TABLE public.film_film_id_seq OWNER TO postgres;
+2026-03-25 01:11:58.740 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.740 UTC [8088] STATEMENT:  ALTER TABLE public.film OWNER TO postgres;
+2026-03-25 01:11:58.741 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.741 UTC [8088] STATEMENT:  ALTER TABLE public.film_actor OWNER TO postgres;
+2026-03-25 01:11:58.743 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.743 UTC [8088] STATEMENT:  ALTER TABLE public.film_category OWNER TO postgres;
+2026-03-25 01:11:58.745 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.745 UTC [8088] STATEMENT:  ALTER TABLE public.actor_info OWNER TO postgres;
+2026-03-25 01:11:58.748 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.748 UTC [8088] STATEMENT:  ALTER TABLE public.address_address_id_seq OWNER TO postgres;
+2026-03-25 01:11:58.751 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.751 UTC [8088] STATEMENT:  ALTER TABLE public.address OWNER TO postgres;
+2026-03-25 01:11:58.757 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.757 UTC [8088] STATEMENT:  ALTER TABLE public.city_city_id_seq OWNER TO postgres;
+2026-03-25 01:11:58.761 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.761 UTC [8088] STATEMENT:  ALTER TABLE public.city OWNER TO postgres;
+2026-03-25 01:11:58.762 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.762 UTC [8088] STATEMENT:  ALTER TABLE public.country_country_id_seq OWNER TO postgres;
+2026-03-25 01:11:58.766 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.766 UTC [8088] STATEMENT:  ALTER TABLE public.country OWNER TO postgres;
+2026-03-25 01:11:58.769 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.769 UTC [8088] STATEMENT:  ALTER TABLE public.customer_list OWNER TO postgres;
+2026-03-25 01:11:58.771 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.771 UTC [8088] STATEMENT:  ALTER TABLE public.film_list OWNER TO postgres;
+2026-03-25 01:11:58.773 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.773 UTC [8088] STATEMENT:  ALTER TABLE public.inventory_inventory_id_seq OWNER TO postgres;
+2026-03-25 01:11:58.775 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.775 UTC [8088] STATEMENT:  ALTER TABLE public.inventory OWNER TO postgres;
+2026-03-25 01:11:58.777 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.777 UTC [8088] STATEMENT:  ALTER TABLE public.language_language_id_seq OWNER TO postgres;
+2026-03-25 01:11:58.778 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.778 UTC [8088] STATEMENT:  ALTER TABLE public.language OWNER TO postgres;
+2026-03-25 01:11:58.781 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.781 UTC [8088] STATEMENT:  ALTER TABLE public.nicer_but_slower_film_list OWNER TO postgres;
+2026-03-25 01:11:58.783 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.783 UTC [8088] STATEMENT:  ALTER TABLE public.payment_payment_id_seq OWNER TO postgres;
+2026-03-25 01:11:58.785 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.785 UTC [8088] STATEMENT:  ALTER TABLE public.payment OWNER TO postgres;
+2026-03-25 01:11:58.787 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.787 UTC [8088] STATEMENT:  ALTER TABLE public.payment_p2022_01 OWNER TO postgres;
+2026-03-25 01:11:58.789 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.789 UTC [8088] STATEMENT:  ALTER TABLE public.payment_p2022_02 OWNER TO postgres;
+2026-03-25 01:11:58.790 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.790 UTC [8088] STATEMENT:  ALTER TABLE public.payment_p2022_03 OWNER TO postgres;
+2026-03-25 01:11:58.792 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.792 UTC [8088] STATEMENT:  ALTER TABLE public.payment_p2022_04 OWNER TO postgres;
+2026-03-25 01:11:58.793 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.793 UTC [8088] STATEMENT:  ALTER TABLE public.payment_p2022_05 OWNER TO postgres;
+2026-03-25 01:11:58.795 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.795 UTC [8088] STATEMENT:  ALTER TABLE public.payment_p2022_06 OWNER TO postgres;
+2026-03-25 01:11:58.796 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.796 UTC [8088] STATEMENT:  ALTER TABLE public.payment_p2022_07 OWNER TO postgres;
+2026-03-25 01:11:58.798 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.798 UTC [8088] STATEMENT:  ALTER TABLE public.rental_rental_id_seq OWNER TO postgres;
+2026-03-25 01:11:58.799 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.799 UTC [8088] STATEMENT:  ALTER TABLE public.rental OWNER TO postgres;
+2026-03-25 01:11:58.805 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.805 UTC [8088] STATEMENT:  ALTER TABLE public.rental_by_category OWNER TO postgres;
+2026-03-25 01:11:58.808 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.808 UTC [8088] STATEMENT:  ALTER TABLE public.sales_by_film_category OWNER TO postgres;
+2026-03-25 01:11:58.809 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.809 UTC [8088] STATEMENT:  ALTER TABLE public.staff_staff_id_seq OWNER TO postgres;
+2026-03-25 01:11:58.813 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.813 UTC [8088] STATEMENT:  ALTER TABLE public.staff OWNER TO postgres;
+2026-03-25 01:11:58.814 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.814 UTC [8088] STATEMENT:  ALTER TABLE public.store_store_id_seq OWNER TO postgres;
+2026-03-25 01:11:58.818 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.818 UTC [8088] STATEMENT:  ALTER TABLE public.store OWNER TO postgres;
+2026-03-25 01:11:58.822 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.822 UTC [8088] STATEMENT:  ALTER TABLE public.sales_by_store OWNER TO postgres;
+2026-03-25 01:11:58.824 UTC [8088] ERROR:  role "postgres" does not exist
+2026-03-25 01:11:58.824 UTC [8088] STATEMENT:  ALTER TABLE public.staff_list OWNER TO postgres;
+2026-03-25 01:14:41.831 UTC [9952] ERROR:  database "pagila" already exists
+2026-03-25 01:14:41.831 UTC [9952] STATEMENT:  CREATE DATABASE pagila;
+2026-03-25 01:14:41.863 UTC [9964] ERROR:  type "bıgınt" already exists
+2026-03-25 01:14:41.863 UTC [9964] STATEMENT:  CREATE DOMAIN public."bıgınt" AS bigint;
+2026-03-25 01:14:41.863 UTC [9964] ERROR:  type "mpaa_rating" already exists
+2026-03-25 01:14:41.863 UTC [9964] STATEMENT:  CREATE TYPE public.mpaa_rating AS ENUM (
+	    'G',
+	    'PG',
+	    'PG-13',
+	    'R',
+	    'NC-17'
+	);
+2026-03-25 01:14:41.864 UTC [9964] ERROR:  type "year" already exists
+2026-03-25 01:14:41.864 UTC [9964] STATEMENT:  CREATE DOMAIN public.year AS integer
+		CONSTRAINT year_check CHECK (((VALUE >= 1901) AND (VALUE <= 2155)));
+2026-03-25 01:14:41.865 UTC [9964] ERROR:  function "_group_concat" already exists with same argument types
+2026-03-25 01:14:41.865 UTC [9964] STATEMENT:  CREATE FUNCTION public._group_concat(text, text) RETURNS text
+	    LANGUAGE sql IMMUTABLE
+	    AS $_$
+	SELECT CASE
+	  WHEN $2 IS NULL THEN $1
+	  WHEN $1 IS NULL THEN $2
+	  ELSE $1 || ', ' || $2
+	END
+	$_$;
+2026-03-25 01:14:41.865 UTC [9964] ERROR:  function "film_in_stock" already exists with same argument types
+2026-03-25 01:14:41.865 UTC [9964] STATEMENT:  CREATE FUNCTION public.film_in_stock(p_film_id integer, p_store_id integer, OUT p_film_count integer) RETURNS SETOF integer
+	    LANGUAGE sql
+	    AS $_$
+	     SELECT inventory_id
+	     FROM inventory
+	     WHERE film_id = $1
+	     AND store_id = $2
+	     AND inventory_in_stock(inventory_id);
+	$_$;
+2026-03-25 01:14:41.865 UTC [9964] ERROR:  function "film_not_in_stock" already exists with same argument types
+2026-03-25 01:14:41.865 UTC [9964] STATEMENT:  CREATE FUNCTION public.film_not_in_stock(p_film_id integer, p_store_id integer, OUT p_film_count integer) RETURNS SETOF integer
+	    LANGUAGE sql
+	    AS $_$
+	    SELECT inventory_id
+	    FROM inventory
+	    WHERE film_id = $1
+	    AND store_id = $2
+	    AND NOT inventory_in_stock(inventory_id);
+	$_$;
+2026-03-25 01:14:41.866 UTC [9964] ERROR:  function "get_customer_balance" already exists with same argument types
+2026-03-25 01:14:41.866 UTC [9964] STATEMENT:  CREATE FUNCTION public.get_customer_balance(p_customer_id integer, p_effective_date timestamp with time zone) RETURNS numeric
+	    LANGUAGE plpgsql
+	    AS $$
+	       --#OK, WE NEED TO CALCULATE THE CURRENT BALANCE GIVEN A CUSTOMER_ID AND A DATE
+	       --#THAT WE WANT THE BALANCE TO BE EFFECTIVE FOR. THE BALANCE IS:
+	       --#   1) RENTAL FEES FOR ALL PREVIOUS RENTALS
+	       --#   2) ONE DOLLAR FOR EVERY DAY THE PREVIOUS RENTALS ARE OVERDUE
+	       --#   3) IF A FILM IS MORE THAN RENTAL_DURATION * 2 OVERDUE, CHARGE THE REPLACEMENT_COST
+	       --#   4) SUBTRACT ALL PAYMENTS MADE BEFORE THE DATE SPECIFIED
+	DECLARE
+	    v_rentfees DECIMAL(5,2); --#FEES PAID TO RENT THE VIDEOS INITIALLY
+	    v_overfees INTEGER;      --#LATE FEES FOR PRIOR RENTALS
+	    v_payments DECIMAL(5,2); --#SUM OF PAYMENTS MADE PREVIOUSLY
+	BEGIN
+	    SELECT COALESCE(SUM(film.rental_rate),0) INTO v_rentfees
+	    FROM film, inventory, rental
+	    WHERE film.film_id = inventory.film_id
+	      AND inventory.inventory_id = rental.inventory_id
+	      AND rental.rental_date <= p_effective_date
+	      AND rental.customer_id = p_customer_id;
+	
+	    SELECT COALESCE(SUM(IF((rental.return_date - rental.rental_date) > (film.rental_duration * '1 day'::interval),
+	        ((rental.return_date - rental.rental_date) - (film.rental_duration * '1 day'::interval)),0)),0) INTO v_overfees
+	    FROM rental, inventory, film
+	    WHERE film.film_id = inventory.film_id
+	      AND inventory.inventory_id = rental.inventory_id
+	      AND rental.rental_date <= p_effective_date
+	      AND rental.customer_id = p_customer_id;
+	
+	    SELECT COALESCE(SUM(payment.amount),0) INTO v_payments
+	    FROM payment
+	    WHERE payment.payment_date <= p_effective_date
+	    AND payment.customer_id = p_customer_id;
+	
+	    RETURN v_rentfees + v_overfees - v_payments;
+	END
+	$$;
+2026-03-25 01:14:41.866 UTC [9964] ERROR:  function "inventory_held_by_customer" already exists with same argument types
+2026-03-25 01:14:41.866 UTC [9964] STATEMENT:  CREATE FUNCTION public.inventory_held_by_customer(p_inventory_id integer) RETURNS integer
+	    LANGUAGE plpgsql
+	    AS $$
+	DECLARE
+	    v_customer_id INTEGER;
+	BEGIN
+	
+	  SELECT customer_id INTO v_customer_id
+	  FROM rental
+	  WHERE return_date IS NULL
+	  AND inventory_id = p_inventory_id;
+	
+	  RETURN v_customer_id;
+	END $$;
+2026-03-25 01:14:41.866 UTC [9964] ERROR:  function "inventory_in_stock" already exists with same argument types
+2026-03-25 01:14:41.866 UTC [9964] STATEMENT:  CREATE FUNCTION public.inventory_in_stock(p_inventory_id integer) RETURNS boolean
+	    LANGUAGE plpgsql
+	    AS $$
+	DECLARE
+	    v_rentals INTEGER;
+	    v_out     INTEGER;
+	BEGIN
+	    -- AN ITEM IS IN-STOCK IF THERE ARE EITHER NO ROWS IN THE rental TABLE
+	    -- FOR THE ITEM OR ALL ROWS HAVE return_date POPULATED
+	
+	    SELECT count(*) INTO v_rentals
+	    FROM rental
+	    WHERE inventory_id = p_inventory_id;
+	
+	    IF v_rentals = 0 THEN
+	      RETURN TRUE;
+	    END IF;
+	
+	    SELECT COUNT(rental_id) INTO v_out
+	    FROM inventory LEFT JOIN rental USING(inventory_id)
+	    WHERE inventory.inventory_id = p_inventory_id
+	    AND rental.return_date IS NULL;
+	
+	    IF v_out > 0 THEN
+	      RETURN FALSE;
+	    ELSE
+	      RETURN TRUE;
+	    END IF;
+	END $$;
+2026-03-25 01:14:41.867 UTC [9964] ERROR:  function "last_day" already exists with same argument types
+2026-03-25 01:14:41.867 UTC [9964] STATEMENT:  CREATE FUNCTION public.last_day(timestamp with time zone) RETURNS date
+	    LANGUAGE sql IMMUTABLE STRICT
+	    AS $_$
+	  SELECT CASE
+	    WHEN EXTRACT(MONTH FROM $1) = 12 THEN
+	      (((EXTRACT(YEAR FROM $1) + 1) operator(pg_catalog.||) '-01-01')::date - INTERVAL '1 day')::date
+	    ELSE
+	      ((EXTRACT(YEAR FROM $1) operator(pg_catalog.||) '-' operator(pg_catalog.||) (EXTRACT(MONTH FROM $1) + 1) operator(pg_catalog.||) '-01')::date - INTERVAL '1 day')::date
+	    END
+	$_$;
+2026-03-25 01:14:41.867 UTC [9964] ERROR:  function "last_updated" already exists with same argument types
+2026-03-25 01:14:41.867 UTC [9964] STATEMENT:  CREATE FUNCTION public.last_updated() RETURNS trigger
+	    LANGUAGE plpgsql
+	    AS $$
+	BEGIN
+	    NEW.last_update = CURRENT_TIMESTAMP;
+	    RETURN NEW;
+	END $$;
+2026-03-25 01:14:41.867 UTC [9964] ERROR:  relation "customer_customer_id_seq" already exists
+2026-03-25 01:14:41.867 UTC [9964] STATEMENT:  CREATE SEQUENCE public.customer_customer_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2026-03-25 01:14:41.869 UTC [9964] ERROR:  relation "customer" already exists
+2026-03-25 01:14:41.869 UTC [9964] STATEMENT:  CREATE TABLE public.customer (
+	    customer_id integer DEFAULT nextval('public.customer_customer_id_seq'::regclass) NOT NULL,
+	    store_id integer NOT NULL,
+	    first_name text NOT NULL,
+	    last_name text NOT NULL,
+	    email text,
+	    address_id integer NOT NULL,
+	    activebool boolean DEFAULT true NOT NULL,
+	    create_date date DEFAULT CURRENT_DATE NOT NULL,
+	    last_update timestamp with time zone DEFAULT now(),
+	    active integer
+	);
+2026-03-25 01:14:41.870 UTC [9964] ERROR:  function "rewards_report" already exists with same argument types
+2026-03-25 01:14:41.870 UTC [9964] STATEMENT:  CREATE FUNCTION public.rewards_report(min_monthly_purchases integer, min_dollar_amount_purchased numeric) RETURNS SETOF public.customer
+	    LANGUAGE plpgsql SECURITY DEFINER
+	    AS $_$
+	DECLARE
+	    last_month_start DATE;
+	    last_month_end DATE;
+	rr RECORD;
+	tmpSQL TEXT;
+	BEGIN
+	
+	    /* Some sanity checks... */
+	    IF min_monthly_purchases = 0 THEN
+	        RAISE EXCEPTION 'Minimum monthly purchases parameter must be > 0';
+	    END IF;
+	    IF min_dollar_amount_purchased = 0.00 THEN
+	        RAISE EXCEPTION 'Minimum monthly dollar amount purchased parameter must be > $0.00';
+	    END IF;
+	
+	    last_month_start := CURRENT_DATE - '3 month'::interval;
+	    last_month_start := to_date((extract(YEAR FROM last_month_start) || '-' || extract(MONTH FROM last_month_start) || '-01'),'YYYY-MM-DD');
+	    last_month_end := LAST_DAY(last_month_start);
+	
+	    /*
+	    Create a temporary storage area for Customer IDs.
+	    */
+	    CREATE TEMPORARY TABLE tmpCustomer (customer_id INTEGER NOT NULL PRIMARY KEY);
+	
+	    /*
+	    Find all customers meeting the monthly purchase requirements
+	    */
+	
+	    tmpSQL := 'INSERT INTO tmpCustomer (customer_id)
+	        SELECT p.customer_id
+	        FROM payment AS p
+	        WHERE DATE(p.payment_date) BETWEEN '||quote_literal(last_month_start) ||' AND '|| quote_literal(last_month_end) || '
+	        GROUP BY customer_id
+	        HAVING SUM(p.amount) > '|| min_dollar_amount_purchased || '
+	        AND COUNT(customer_id) > ' ||min_monthly_purchases ;
+	
+	    EXECUTE tmpSQL;
+	
+	    /*
+	    Output ALL customer information of matching rewardees.
+	    Customize output as needed.
+	    */
+	    FOR rr IN EXECUTE 'SELECT c.* FROM tmpCustomer AS t INNER JOIN customer AS c ON t.customer_id = c.customer_id' LOOP
+	        RETURN NEXT rr;
+	    END LOOP;
+	
+	    /* Clean up */
+	    tmpSQL := 'DROP TABLE tmpCustomer';
+	    EXECUTE tmpSQL;
+	
+	RETURN;
+	END
+	$_$;
+2026-03-25 01:14:41.870 UTC [9964] ERROR:  function "group_concat" already exists with same argument types
+2026-03-25 01:14:41.870 UTC [9964] STATEMENT:  CREATE AGGREGATE public.group_concat(text) (
+	    SFUNC = public._group_concat,
+	    STYPE = text
+	);
+2026-03-25 01:14:41.871 UTC [9964] ERROR:  relation "actor_actor_id_seq" already exists
+2026-03-25 01:14:41.871 UTC [9964] STATEMENT:  CREATE SEQUENCE public.actor_actor_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2026-03-25 01:14:41.872 UTC [9964] ERROR:  relation "actor" already exists
+2026-03-25 01:14:41.872 UTC [9964] STATEMENT:  CREATE TABLE public.actor (
+	    actor_id integer DEFAULT nextval('public.actor_actor_id_seq'::regclass) NOT NULL,
+	    first_name text NOT NULL,
+	    last_name text NOT NULL,
+	    last_update timestamp with time zone DEFAULT now() NOT NULL
+	);
+2026-03-25 01:14:41.872 UTC [9964] ERROR:  relation "category_category_id_seq" already exists
+2026-03-25 01:14:41.872 UTC [9964] STATEMENT:  CREATE SEQUENCE public.category_category_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2026-03-25 01:14:41.875 UTC [9964] ERROR:  relation "category" already exists
+2026-03-25 01:14:41.875 UTC [9964] STATEMENT:  CREATE TABLE public.category (
+	    category_id integer DEFAULT nextval('public.category_category_id_seq'::regclass) NOT NULL,
+	    name text NOT NULL,
+	    last_update timestamp with time zone DEFAULT now() NOT NULL
+	);
+2026-03-25 01:14:41.876 UTC [9964] ERROR:  relation "film_film_id_seq" already exists
+2026-03-25 01:14:41.876 UTC [9964] STATEMENT:  CREATE SEQUENCE public.film_film_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2026-03-25 01:14:41.877 UTC [9964] ERROR:  relation "film" already exists
+2026-03-25 01:14:41.877 UTC [9964] STATEMENT:  CREATE TABLE public.film (
+	    film_id integer DEFAULT nextval('public.film_film_id_seq'::regclass) NOT NULL,
+	    title text NOT NULL,
+	    description text,
+	    release_year public.year,
+	    language_id integer NOT NULL,
+	    original_language_id integer,
+	    rental_duration smallint DEFAULT 3 NOT NULL,
+	    rental_rate numeric(4,2) DEFAULT 4.99 NOT NULL,
+	    length smallint,
+	    replacement_cost numeric(5,2) DEFAULT 19.99 NOT NULL,
+	    rating public.mpaa_rating DEFAULT 'G'::public.mpaa_rating,
+	    last_update timestamp with time zone DEFAULT now() NOT NULL,
+	    special_features text[],
+	    fulltext tsvector NOT NULL
+	);
+2026-03-25 01:14:41.877 UTC [9964] ERROR:  relation "film_actor" already exists
+2026-03-25 01:14:41.877 UTC [9964] STATEMENT:  CREATE TABLE public.film_actor (
+	    actor_id integer NOT NULL,
+	    film_id integer NOT NULL,
+	    last_update timestamp with time zone DEFAULT now() NOT NULL
+	);
+2026-03-25 01:14:41.878 UTC [9964] ERROR:  relation "film_category" already exists
+2026-03-25 01:14:41.878 UTC [9964] STATEMENT:  CREATE TABLE public.film_category (
+	    film_id integer NOT NULL,
+	    category_id integer NOT NULL,
+	    last_update timestamp with time zone DEFAULT now() NOT NULL
+	);
+2026-03-25 01:14:41.880 UTC [9964] ERROR:  relation "actor_info" already exists
+2026-03-25 01:14:41.880 UTC [9964] STATEMENT:  CREATE VIEW public.actor_info AS
+	 SELECT a.actor_id,
+	    a.first_name,
+	    a.last_name,
+	    public.group_concat(DISTINCT ((c.name || ': '::text) || ( SELECT public.group_concat(f.title) AS group_concat
+	           FROM ((public.film f
+	             JOIN public.film_category fc_1 ON ((f.film_id = fc_1.film_id)))
+	             JOIN public.film_actor fa_1 ON ((f.film_id = fa_1.film_id)))
+	          WHERE ((fc_1.category_id = c.category_id) AND (fa_1.actor_id = a.actor_id))
+	          GROUP BY fa_1.actor_id))) AS film_info
+	   FROM (((public.actor a
+	     LEFT JOIN public.film_actor fa ON ((a.actor_id = fa.actor_id)))
+	     LEFT JOIN public.film_category fc ON ((fa.film_id = fc.film_id)))
+	     LEFT JOIN public.category c ON ((fc.category_id = c.category_id)))
+	  GROUP BY a.actor_id, a.first_name, a.last_name;
+2026-03-25 01:14:41.881 UTC [9964] ERROR:  relation "address_address_id_seq" already exists
+2026-03-25 01:14:41.881 UTC [9964] STATEMENT:  CREATE SEQUENCE public.address_address_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2026-03-25 01:14:41.881 UTC [9964] ERROR:  relation "address" already exists
+2026-03-25 01:14:41.881 UTC [9964] STATEMENT:  CREATE TABLE public.address (
+	    address_id integer DEFAULT nextval('public.address_address_id_seq'::regclass) NOT NULL,
+	    address text NOT NULL,
+	    address2 text,
+	    district text NOT NULL,
+	    city_id integer NOT NULL,
+	    postal_code text,
+	    phone text NOT NULL,
+	    last_update timestamp with time zone DEFAULT now() NOT NULL
+	);
+2026-03-25 01:14:41.882 UTC [9964] ERROR:  relation "city_city_id_seq" already exists
+2026-03-25 01:14:41.882 UTC [9964] STATEMENT:  CREATE SEQUENCE public.city_city_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2026-03-25 01:14:41.883 UTC [9964] ERROR:  relation "city" already exists
+2026-03-25 01:14:41.883 UTC [9964] STATEMENT:  CREATE TABLE public.city (
+	    city_id integer DEFAULT nextval('public.city_city_id_seq'::regclass) NOT NULL,
+	    city text NOT NULL,
+	    country_id integer NOT NULL,
+	    last_update timestamp with time zone DEFAULT now() NOT NULL
+	);
+2026-03-25 01:14:41.884 UTC [9964] ERROR:  relation "country_country_id_seq" already exists
+2026-03-25 01:14:41.884 UTC [9964] STATEMENT:  CREATE SEQUENCE public.country_country_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2026-03-25 01:14:41.884 UTC [9964] ERROR:  relation "country" already exists
+2026-03-25 01:14:41.884 UTC [9964] STATEMENT:  CREATE TABLE public.country (
+	    country_id integer DEFAULT nextval('public.country_country_id_seq'::regclass) NOT NULL,
+	    country text NOT NULL,
+	    last_update timestamp with time zone DEFAULT now() NOT NULL
+	);
+2026-03-25 01:14:41.885 UTC [9964] ERROR:  relation "customer_list" already exists
+2026-03-25 01:14:41.885 UTC [9964] STATEMENT:  CREATE VIEW public.customer_list AS
+	 SELECT cu.customer_id AS id,
+	    ((cu.first_name || ' '::text) || cu.last_name) AS name,
+	    a.address,
+	    a.postal_code AS "zip code",
+	    a.phone,
+	    city.city,
+	    country.country,
+	        CASE
+	            WHEN cu.activebool THEN 'active'::text
+	            ELSE ''::text
+	        END AS notes,
+	    cu.store_id AS sid
+	   FROM (((public.customer cu
+	     JOIN public.address a ON ((cu.address_id = a.address_id)))
+	     JOIN public.city ON ((a.city_id = city.city_id)))
+	     JOIN public.country ON ((city.country_id = country.country_id)));
+2026-03-25 01:14:41.887 UTC [9964] ERROR:  relation "film_list" already exists
+2026-03-25 01:14:41.887 UTC [9964] STATEMENT:  CREATE VIEW public.film_list AS
+	 SELECT film.film_id AS fid,
+	    film.title,
+	    film.description,
+	    category.name AS category,
+	    film.rental_rate AS price,
+	    film.length,
+	    film.rating,
+	    public.group_concat(((actor.first_name || ' '::text) || actor.last_name)) AS actors
+	   FROM ((((public.category
+	     LEFT JOIN public.film_category ON ((category.category_id = film_category.category_id)))
+	     LEFT JOIN public.film ON ((film_category.film_id = film.film_id)))
+	     JOIN public.film_actor ON ((film.film_id = film_actor.film_id)))
+	     JOIN public.actor ON ((film_actor.actor_id = actor.actor_id)))
+	  GROUP BY film.film_id, film.title, film.description, category.name, film.rental_rate, film.length, film.rating;
+2026-03-25 01:14:41.888 UTC [9964] ERROR:  relation "inventory_inventory_id_seq" already exists
+2026-03-25 01:14:41.888 UTC [9964] STATEMENT:  CREATE SEQUENCE public.inventory_inventory_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2026-03-25 01:14:41.888 UTC [9964] ERROR:  relation "inventory" already exists
+2026-03-25 01:14:41.888 UTC [9964] STATEMENT:  CREATE TABLE public.inventory (
+	    inventory_id integer DEFAULT nextval('public.inventory_inventory_id_seq'::regclass) NOT NULL,
+	    film_id integer NOT NULL,
+	    store_id integer NOT NULL,
+	    last_update timestamp with time zone DEFAULT now() NOT NULL
+	);
+2026-03-25 01:14:41.889 UTC [9964] ERROR:  relation "language_language_id_seq" already exists
+2026-03-25 01:14:41.889 UTC [9964] STATEMENT:  CREATE SEQUENCE public.language_language_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2026-03-25 01:14:41.890 UTC [9964] ERROR:  relation "language" already exists
+2026-03-25 01:14:41.890 UTC [9964] STATEMENT:  CREATE TABLE public.language (
+	    language_id integer DEFAULT nextval('public.language_language_id_seq'::regclass) NOT NULL,
+	    name character(20) NOT NULL,
+	    last_update timestamp with time zone DEFAULT now() NOT NULL
+	);
+2026-03-25 01:14:41.891 UTC [9964] ERROR:  relation "nicer_but_slower_film_list" already exists
+2026-03-25 01:14:41.891 UTC [9964] STATEMENT:  CREATE VIEW public.nicer_but_slower_film_list AS
+	 SELECT film.film_id AS fid,
+	    film.title,
+	    film.description,
+	    category.name AS category,
+	    film.rental_rate AS price,
+	    film.length,
+	    film.rating,
+	    public.group_concat((((upper("substring"(actor.first_name, 1, 1)) || lower("substring"(actor.first_name, 2))) || upper("substring"(actor.last_name, 1, 1))) || lower("substring"(actor.last_name, 2)))) AS actors
+	   FROM ((((public.category
+	     LEFT JOIN public.film_category ON ((category.category_id = film_category.category_id)))
+	     LEFT JOIN public.film ON ((film_category.film_id = film.film_id)))
+	     JOIN public.film_actor ON ((film.film_id = film_actor.film_id)))
+	     JOIN public.actor ON ((film_actor.actor_id = actor.actor_id)))
+	  GROUP BY film.film_id, film.title, film.description, category.name, film.rental_rate, film.length, film.rating;
+2026-03-25 01:14:41.892 UTC [9964] ERROR:  relation "payment_payment_id_seq" already exists
+2026-03-25 01:14:41.892 UTC [9964] STATEMENT:  CREATE SEQUENCE public.payment_payment_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2026-03-25 01:14:41.893 UTC [9964] ERROR:  relation "payment" already exists
+2026-03-25 01:14:41.893 UTC [9964] STATEMENT:  CREATE TABLE public.payment (
+	    payment_id integer DEFAULT nextval('public.payment_payment_id_seq'::regclass) NOT NULL,
+	    customer_id integer NOT NULL,
+	    staff_id integer NOT NULL,
+	    rental_id integer NOT NULL,
+	    amount numeric(5,2) NOT NULL,
+	    payment_date timestamp with time zone NOT NULL
+	)
+	PARTITION BY RANGE (payment_date);
+2026-03-25 01:14:41.893 UTC [9964] ERROR:  relation "payment_p2022_01" already exists
+2026-03-25 01:14:41.893 UTC [9964] STATEMENT:  CREATE TABLE public.payment_p2022_01 (
+	    payment_id integer DEFAULT nextval('public.payment_payment_id_seq'::regclass) NOT NULL,
+	    customer_id integer NOT NULL,
+	    staff_id integer NOT NULL,
+	    rental_id integer NOT NULL,
+	    amount numeric(5,2) NOT NULL,
+	    payment_date timestamp with time zone NOT NULL
+	);
+2026-03-25 01:14:41.894 UTC [9964] ERROR:  relation "payment_p2022_02" already exists
+2026-03-25 01:14:41.894 UTC [9964] STATEMENT:  CREATE TABLE public.payment_p2022_02 (
+	    payment_id integer DEFAULT nextval('public.payment_payment_id_seq'::regclass) NOT NULL,
+	    customer_id integer NOT NULL,
+	    staff_id integer NOT NULL,
+	    rental_id integer NOT NULL,
+	    amount numeric(5,2) NOT NULL,
+	    payment_date timestamp with time zone NOT NULL
+	);
+2026-03-25 01:14:41.895 UTC [9964] ERROR:  relation "payment_p2022_03" already exists
+2026-03-25 01:14:41.895 UTC [9964] STATEMENT:  CREATE TABLE public.payment_p2022_03 (
+	    payment_id integer DEFAULT nextval('public.payment_payment_id_seq'::regclass) NOT NULL,
+	    customer_id integer NOT NULL,
+	    staff_id integer NOT NULL,
+	    rental_id integer NOT NULL,
+	    amount numeric(5,2) NOT NULL,
+	    payment_date timestamp with time zone NOT NULL
+	);
+2026-03-25 01:14:41.896 UTC [9964] ERROR:  relation "payment_p2022_04" already exists
+2026-03-25 01:14:41.896 UTC [9964] STATEMENT:  CREATE TABLE public.payment_p2022_04 (
+	    payment_id integer DEFAULT nextval('public.payment_payment_id_seq'::regclass) NOT NULL,
+	    customer_id integer NOT NULL,
+	    staff_id integer NOT NULL,
+	    rental_id integer NOT NULL,
+	    amount numeric(5,2) NOT NULL,
+	    payment_date timestamp with time zone NOT NULL
+	);
+2026-03-25 01:14:41.896 UTC [9964] ERROR:  relation "payment_p2022_05" already exists
+2026-03-25 01:14:41.896 UTC [9964] STATEMENT:  CREATE TABLE public.payment_p2022_05 (
+	    payment_id integer DEFAULT nextval('public.payment_payment_id_seq'::regclass) NOT NULL,
+	    customer_id integer NOT NULL,
+	    staff_id integer NOT NULL,
+	    rental_id integer NOT NULL,
+	    amount numeric(5,2) NOT NULL,
+	    payment_date timestamp with time zone NOT NULL
+	);
+2026-03-25 01:14:41.897 UTC [9964] ERROR:  relation "payment_p2022_06" already exists
+2026-03-25 01:14:41.897 UTC [9964] STATEMENT:  CREATE TABLE public.payment_p2022_06 (
+	    payment_id integer DEFAULT nextval('public.payment_payment_id_seq'::regclass) NOT NULL,
+	    customer_id integer NOT NULL,
+	    staff_id integer NOT NULL,
+	    rental_id integer NOT NULL,
+	    amount numeric(5,2) NOT NULL,
+	    payment_date timestamp with time zone NOT NULL
+	);
+2026-03-25 01:14:41.898 UTC [9964] ERROR:  relation "payment_p2022_07" already exists
+2026-03-25 01:14:41.898 UTC [9964] STATEMENT:  CREATE TABLE public.payment_p2022_07 (
+	    payment_id integer DEFAULT nextval('public.payment_payment_id_seq'::regclass) NOT NULL,
+	    customer_id integer NOT NULL,
+	    staff_id integer NOT NULL,
+	    rental_id integer NOT NULL,
+	    amount numeric(5,2) NOT NULL,
+	    payment_date timestamp with time zone NOT NULL
+	);
+2026-03-25 01:14:41.899 UTC [9964] ERROR:  relation "rental_rental_id_seq" already exists
+2026-03-25 01:14:41.899 UTC [9964] STATEMENT:  CREATE SEQUENCE public.rental_rental_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2026-03-25 01:14:41.899 UTC [9964] ERROR:  relation "rental" already exists
+2026-03-25 01:14:41.899 UTC [9964] STATEMENT:  CREATE TABLE public.rental (
+	    rental_id integer DEFAULT nextval('public.rental_rental_id_seq'::regclass) NOT NULL,
+	    rental_date timestamp with time zone NOT NULL,
+	    inventory_id integer NOT NULL,
+	    customer_id integer NOT NULL,
+	    return_date timestamp with time zone,
+	    staff_id integer NOT NULL,
+	    last_update timestamp with time zone DEFAULT now() NOT NULL
+	);
+2026-03-25 01:14:41.900 UTC [9964] ERROR:  relation "rental_by_category" already exists
+2026-03-25 01:14:41.900 UTC [9964] STATEMENT:  CREATE MATERIALIZED VIEW public.rental_by_category AS
+	 SELECT c.name AS category,
+	    sum(p.amount) AS total_sales
+	   FROM (((((public.payment p
+	     JOIN public.rental r ON ((p.rental_id = r.rental_id)))
+	     JOIN public.inventory i ON ((r.inventory_id = i.inventory_id)))
+	     JOIN public.film f ON ((i.film_id = f.film_id)))
+	     JOIN public.film_category fc ON ((f.film_id = fc.film_id)))
+	     JOIN public.category c ON ((fc.category_id = c.category_id)))
+	  GROUP BY c.name
+	  ORDER BY (sum(p.amount)) DESC
+	  WITH NO DATA;
+2026-03-25 01:14:41.901 UTC [9964] ERROR:  relation "sales_by_film_category" already exists
+2026-03-25 01:14:41.901 UTC [9964] STATEMENT:  CREATE VIEW public.sales_by_film_category AS
+	 SELECT c.name AS category,
+	    sum(p.amount) AS total_sales
+	   FROM (((((public.payment p
+	     JOIN public.rental r ON ((p.rental_id = r.rental_id)))
+	     JOIN public.inventory i ON ((r.inventory_id = i.inventory_id)))
+	     JOIN public.film f ON ((i.film_id = f.film_id)))
+	     JOIN public.film_category fc ON ((f.film_id = fc.film_id)))
+	     JOIN public.category c ON ((fc.category_id = c.category_id)))
+	  GROUP BY c.name
+	  ORDER BY (sum(p.amount)) DESC;
+2026-03-25 01:14:41.902 UTC [9964] ERROR:  relation "staff_staff_id_seq" already exists
+2026-03-25 01:14:41.902 UTC [9964] STATEMENT:  CREATE SEQUENCE public.staff_staff_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2026-03-25 01:14:41.903 UTC [9964] ERROR:  relation "staff" already exists
+2026-03-25 01:14:41.903 UTC [9964] STATEMENT:  CREATE TABLE public.staff (
+	    staff_id integer DEFAULT nextval('public.staff_staff_id_seq'::regclass) NOT NULL,
+	    first_name text NOT NULL,
+	    last_name text NOT NULL,
+	    address_id integer NOT NULL,
+	    email text,
+	    store_id integer NOT NULL,
+	    active boolean DEFAULT true NOT NULL,
+	    username text NOT NULL,
+	    password text,
+	    last_update timestamp with time zone DEFAULT now() NOT NULL,
+	    picture bytea
+	);
+2026-03-25 01:14:41.904 UTC [9964] ERROR:  relation "store_store_id_seq" already exists
+2026-03-25 01:14:41.904 UTC [9964] STATEMENT:  CREATE SEQUENCE public.store_store_id_seq
+	    START WITH 1
+	    INCREMENT BY 1
+	    NO MINVALUE
+	    NO MAXVALUE
+	    CACHE 1;
+2026-03-25 01:14:41.905 UTC [9964] ERROR:  relation "store" already exists
+2026-03-25 01:14:41.905 UTC [9964] STATEMENT:  CREATE TABLE public.store (
+	    store_id integer DEFAULT nextval('public.store_store_id_seq'::regclass) NOT NULL,
+	    manager_staff_id integer NOT NULL,
+	    address_id integer NOT NULL,
+	    last_update timestamp with time zone DEFAULT now() NOT NULL
+	);
+2026-03-25 01:14:41.906 UTC [9964] ERROR:  relation "sales_by_store" already exists
+2026-03-25 01:14:41.906 UTC [9964] STATEMENT:  CREATE VIEW public.sales_by_store AS
+	 SELECT ((c.city || ','::text) || cy.country) AS store,
+	    ((m.first_name || ' '::text) || m.last_name) AS manager,
+	    sum(p.amount) AS total_sales
+	   FROM (((((((public.payment p
+	     JOIN public.rental r ON ((p.rental_id = r.rental_id)))
+	     JOIN public.inventory i ON ((r.inventory_id = i.inventory_id)))
+	     JOIN public.store s ON ((i.store_id = s.store_id)))
+	     JOIN public.address a ON ((s.address_id = a.address_id)))
+	     JOIN public.city c ON ((a.city_id = c.city_id)))
+	     JOIN public.country cy ON ((c.country_id = cy.country_id)))
+	     JOIN public.staff m ON ((s.manager_staff_id = m.staff_id)))
+	  GROUP BY cy.country, c.city, s.store_id, m.first_name, m.last_name
+	  ORDER BY cy.country, c.city;
+2026-03-25 01:14:41.907 UTC [9964] ERROR:  relation "staff_list" already exists
+2026-03-25 01:14:41.907 UTC [9964] STATEMENT:  CREATE VIEW public.staff_list AS
+	 SELECT s.staff_id AS id,
+	    ((s.first_name || ' '::text) || s.last_name) AS name,
+	    a.address,
+	    a.postal_code AS "zip code",
+	    a.phone,
+	    city.city,
+	    country.country,
+	    s.store_id AS sid
+	   FROM (((public.staff s
+	     JOIN public.address a ON ((s.address_id = a.address_id)))
+	     JOIN public.city ON ((a.city_id = city.city_id)))
+	     JOIN public.country ON ((city.country_id = country.country_id)));
+2026-03-25 01:14:41.908 UTC [9964] ERROR:  "payment_p2022_01" is already a partition
+2026-03-25 01:14:41.908 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment ATTACH PARTITION public.payment_p2022_01 FOR VALUES FROM ('2022-01-01 00:00:00+00') TO ('2022-02-01 00:00:00+00');
+2026-03-25 01:14:41.909 UTC [9964] ERROR:  "payment_p2022_02" is already a partition
+2026-03-25 01:14:41.909 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment ATTACH PARTITION public.payment_p2022_02 FOR VALUES FROM ('2022-02-01 00:00:00+00') TO ('2022-03-01 00:00:00+00');
+2026-03-25 01:14:41.909 UTC [9964] ERROR:  "payment_p2022_03" is already a partition
+2026-03-25 01:14:41.909 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment ATTACH PARTITION public.payment_p2022_03 FOR VALUES FROM ('2022-03-01 00:00:00+00') TO ('2022-04-01 00:00:00+00');
+2026-03-25 01:14:41.909 UTC [9964] ERROR:  "payment_p2022_04" is already a partition
+2026-03-25 01:14:41.909 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment ATTACH PARTITION public.payment_p2022_04 FOR VALUES FROM ('2022-04-01 00:00:00+00') TO ('2022-05-01 00:00:00+00');
+2026-03-25 01:14:41.909 UTC [9964] ERROR:  "payment_p2022_05" is already a partition
+2026-03-25 01:14:41.909 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment ATTACH PARTITION public.payment_p2022_05 FOR VALUES FROM ('2022-05-01 00:00:00+00') TO ('2022-06-01 00:00:00+00');
+2026-03-25 01:14:41.909 UTC [9964] ERROR:  "payment_p2022_06" is already a partition
+2026-03-25 01:14:41.909 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment ATTACH PARTITION public.payment_p2022_06 FOR VALUES FROM ('2022-06-01 00:00:00+00') TO ('2022-07-01 00:00:00+00');
+2026-03-25 01:14:41.909 UTC [9964] ERROR:  "payment_p2022_07" is already a partition
+2026-03-25 01:14:41.909 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment ATTACH PARTITION public.payment_p2022_07 FOR VALUES FROM ('2022-07-01 00:00:00+00') TO ('2022-08-01 00:00:00+00');
+2026-03-25 01:14:41.910 UTC [9964] ERROR:  duplicate key value violates unique constraint "actor_pkey"
+2026-03-25 01:14:41.910 UTC [9964] DETAIL:  Key (actor_id)=(1) already exists.
+2026-03-25 01:14:41.910 UTC [9964] CONTEXT:  COPY actor, line 1
+2026-03-25 01:14:41.910 UTC [9964] STATEMENT:  COPY public.actor (actor_id, first_name, last_name, last_update) FROM stdin;
+2026-03-25 01:14:41.913 UTC [9964] ERROR:  duplicate key value violates unique constraint "address_pkey"
+2026-03-25 01:14:41.913 UTC [9964] DETAIL:  Key (address_id)=(1) already exists.
+2026-03-25 01:14:41.913 UTC [9964] CONTEXT:  COPY address, line 1
+2026-03-25 01:14:41.913 UTC [9964] STATEMENT:  COPY public.address (address_id, address, address2, district, city_id, postal_code, phone, last_update) FROM stdin;
+2026-03-25 01:14:41.913 UTC [9964] ERROR:  duplicate key value violates unique constraint "category_pkey"
+2026-03-25 01:14:41.913 UTC [9964] DETAIL:  Key (category_id)=(1) already exists.
+2026-03-25 01:14:41.913 UTC [9964] CONTEXT:  COPY category, line 1
+2026-03-25 01:14:41.913 UTC [9964] STATEMENT:  COPY public.category (category_id, name, last_update) FROM stdin;
+2026-03-25 01:14:41.915 UTC [9964] ERROR:  duplicate key value violates unique constraint "city_pkey"
+2026-03-25 01:14:41.915 UTC [9964] DETAIL:  Key (city_id)=(1) already exists.
+2026-03-25 01:14:41.915 UTC [9964] CONTEXT:  COPY city, line 1
+2026-03-25 01:14:41.915 UTC [9964] STATEMENT:  COPY public.city (city_id, city, country_id, last_update) FROM stdin;
+2026-03-25 01:14:41.916 UTC [9964] ERROR:  duplicate key value violates unique constraint "country_pkey"
+2026-03-25 01:14:41.916 UTC [9964] DETAIL:  Key (country_id)=(1) already exists.
+2026-03-25 01:14:41.916 UTC [9964] CONTEXT:  COPY country, line 1
+2026-03-25 01:14:41.916 UTC [9964] STATEMENT:  COPY public.country (country_id, country, last_update) FROM stdin;
+2026-03-25 01:14:41.919 UTC [9964] ERROR:  duplicate key value violates unique constraint "customer_pkey"
+2026-03-25 01:14:41.919 UTC [9964] DETAIL:  Key (customer_id)=(1) already exists.
+2026-03-25 01:14:41.919 UTC [9964] CONTEXT:  COPY customer, line 1
+2026-03-25 01:14:41.919 UTC [9964] STATEMENT:  COPY public.customer (customer_id, store_id, first_name, last_name, email, address_id, activebool, create_date, last_update, active) FROM stdin;
+2026-03-25 01:14:41.927 UTC [9964] ERROR:  duplicate key value violates unique constraint "film_pkey"
+2026-03-25 01:14:41.927 UTC [9964] DETAIL:  Key (film_id)=(1) already exists.
+2026-03-25 01:14:41.927 UTC [9964] CONTEXT:  COPY film, line 1: "1	ACADEMY DINOSAUR	A Epic Drama of a Feminist And a Mad Scientist who must Battle a Teacher in The C..."
+2026-03-25 01:14:41.927 UTC [9964] STATEMENT:  COPY public.film (film_id, title, description, release_year, language_id, original_language_id, rental_duration, rental_rate, length, replacement_cost, rating, last_update, special_features, fulltext) FROM stdin;
+2026-03-25 01:14:41.930 UTC [9964] ERROR:  duplicate key value violates unique constraint "film_actor_pkey"
+2026-03-25 01:14:41.930 UTC [9964] DETAIL:  Key (actor_id, film_id)=(1, 1) already exists.
+2026-03-25 01:14:41.930 UTC [9964] CONTEXT:  COPY film_actor, line 1
+2026-03-25 01:14:41.930 UTC [9964] STATEMENT:  COPY public.film_actor (actor_id, film_id, last_update) FROM stdin;
+2026-03-25 01:14:41.934 UTC [9964] ERROR:  duplicate key value violates unique constraint "film_category_pkey"
+2026-03-25 01:14:41.934 UTC [9964] DETAIL:  Key (film_id, category_id)=(56, 11) already exists.
+2026-03-25 01:14:41.934 UTC [9964] CONTEXT:  COPY film_category, line 1
+2026-03-25 01:14:41.934 UTC [9964] STATEMENT:  COPY public.film_category (film_id, category_id, last_update) FROM stdin;
+2026-03-25 01:14:41.937 UTC [9964] ERROR:  duplicate key value violates unique constraint "inventory_pkey"
+2026-03-25 01:14:41.937 UTC [9964] DETAIL:  Key (inventory_id)=(1) already exists.
+2026-03-25 01:14:41.937 UTC [9964] CONTEXT:  COPY inventory, line 1
+2026-03-25 01:14:41.937 UTC [9964] STATEMENT:  COPY public.inventory (inventory_id, film_id, store_id, last_update) FROM stdin;
+2026-03-25 01:14:41.938 UTC [9964] ERROR:  duplicate key value violates unique constraint "language_pkey"
+2026-03-25 01:14:41.938 UTC [9964] DETAIL:  Key (language_id)=(1) already exists.
+2026-03-25 01:14:41.938 UTC [9964] CONTEXT:  COPY language, line 1
+2026-03-25 01:14:41.938 UTC [9964] STATEMENT:  COPY public.language (language_id, name, last_update) FROM stdin;
+2026-03-25 01:14:41.940 UTC [9964] ERROR:  duplicate key value violates unique constraint "payment_p2022_01_pkey"
+2026-03-25 01:14:41.940 UTC [9964] DETAIL:  Key (payment_date, payment_id)=(2022-01-29 01:58:52.222594+00, 16051) already exists.
+2026-03-25 01:14:41.940 UTC [9964] CONTEXT:  COPY payment_p2022_01, line 1
+2026-03-25 01:14:41.940 UTC [9964] STATEMENT:  COPY public.payment_p2022_01 (payment_id, customer_id, staff_id, rental_id, amount, payment_date) FROM stdin;
+2026-03-25 01:14:41.944 UTC [9964] ERROR:  duplicate key value violates unique constraint "payment_p2022_02_pkey"
+2026-03-25 01:14:41.944 UTC [9964] DETAIL:  Key (payment_date, payment_id)=(2022-02-03 01:49:30.663659+00, 16056) already exists.
+2026-03-25 01:14:41.944 UTC [9964] CONTEXT:  COPY payment_p2022_02, line 1
+2026-03-25 01:14:41.944 UTC [9964] STATEMENT:  COPY public.payment_p2022_02 (payment_id, customer_id, staff_id, rental_id, amount, payment_date) FROM stdin;
+2026-03-25 01:14:41.948 UTC [9964] ERROR:  duplicate key value violates unique constraint "payment_p2022_03_pkey"
+2026-03-25 01:14:41.948 UTC [9964] DETAIL:  Key (payment_date, payment_id)=(2022-03-02 19:51:40.813503+00, 16053) already exists.
+2026-03-25 01:14:41.948 UTC [9964] CONTEXT:  COPY payment_p2022_03, line 1
+2026-03-25 01:14:41.948 UTC [9964] STATEMENT:  COPY public.payment_p2022_03 (payment_id, customer_id, staff_id, rental_id, amount, payment_date) FROM stdin;
+2026-03-25 01:14:41.952 UTC [9964] ERROR:  duplicate key value violates unique constraint "payment_p2022_04_pkey"
+2026-03-25 01:14:41.952 UTC [9964] DETAIL:  Key (payment_date, payment_id)=(2022-04-15 12:28:07.452161+00, 16066) already exists.
+2026-03-25 01:14:41.952 UTC [9964] CONTEXT:  COPY payment_p2022_04, line 1
+2026-03-25 01:14:41.952 UTC [9964] STATEMENT:  COPY public.payment_p2022_04 (payment_id, customer_id, staff_id, rental_id, amount, payment_date) FROM stdin;
+2026-03-25 01:14:41.956 UTC [9964] ERROR:  duplicate key value violates unique constraint "payment_p2022_05_pkey"
+2026-03-25 01:14:41.956 UTC [9964] DETAIL:  Key (payment_date, payment_id)=(2022-05-20 15:54:02.174545+00, 16055) already exists.
+2026-03-25 01:14:41.956 UTC [9964] CONTEXT:  COPY payment_p2022_05, line 1
+2026-03-25 01:14:41.956 UTC [9964] STATEMENT:  COPY public.payment_p2022_05 (payment_id, customer_id, staff_id, rental_id, amount, payment_date) FROM stdin;
+2026-03-25 01:14:41.959 UTC [9964] ERROR:  duplicate key value violates unique constraint "payment_p2022_06_pkey"
+2026-03-25 01:14:41.959 UTC [9964] DETAIL:  Key (payment_date, payment_id)=(2022-06-21 07:41:50.707316+00, 16050) already exists.
+2026-03-25 01:14:41.959 UTC [9964] CONTEXT:  COPY payment_p2022_06, line 1
+2026-03-25 01:14:41.959 UTC [9964] STATEMENT:  COPY public.payment_p2022_06 (payment_id, customer_id, staff_id, rental_id, amount, payment_date) FROM stdin;
+2026-03-25 01:14:41.963 UTC [9964] ERROR:  duplicate key value violates unique constraint "payment_p2022_07_pkey"
+2026-03-25 01:14:41.963 UTC [9964] DETAIL:  Key (payment_date, payment_id)=(2022-07-19 06:32:02.911937+00, 16061) already exists.
+2026-03-25 01:14:41.963 UTC [9964] CONTEXT:  COPY payment_p2022_07, line 1
+2026-03-25 01:14:41.963 UTC [9964] STATEMENT:  COPY public.payment_p2022_07 (payment_id, customer_id, staff_id, rental_id, amount, payment_date) FROM stdin;
+2026-03-25 01:14:41.967 UTC [9964] ERROR:  duplicate key value violates unique constraint "rental_pkey"
+2026-03-25 01:14:41.967 UTC [9964] DETAIL:  Key (rental_id)=(2) already exists.
+2026-03-25 01:14:41.967 UTC [9964] CONTEXT:  COPY rental, line 1
+2026-03-25 01:14:41.967 UTC [9964] STATEMENT:  COPY public.rental (rental_id, rental_date, inventory_id, customer_id, return_date, staff_id, last_update) FROM stdin;
+2026-03-25 01:14:41.972 UTC [9964] ERROR:  duplicate key value violates unique constraint "staff_pkey"
+2026-03-25 01:14:41.972 UTC [9964] DETAIL:  Key (staff_id)=(0) already exists.
+2026-03-25 01:14:41.972 UTC [9964] CONTEXT:  COPY staff, line 1
+2026-03-25 01:14:41.972 UTC [9964] STATEMENT:  COPY public.staff (staff_id, first_name, last_name, address_id, email, store_id, active, username, password, last_update, picture) FROM stdin;
+2026-03-25 01:14:41.974 UTC [9964] ERROR:  duplicate key value violates unique constraint "store_pkey"
+2026-03-25 01:14:41.974 UTC [9964] DETAIL:  Key (store_id)=(0) already exists.
+2026-03-25 01:14:41.974 UTC [9964] CONTEXT:  COPY store, line 1
+2026-03-25 01:14:41.974 UTC [9964] STATEMENT:  COPY public.store (store_id, manager_staff_id, address_id, last_update) FROM stdin;
+2026-03-25 01:14:41.995 UTC [9964] ERROR:  multiple primary keys for table "actor" are not allowed
+2026-03-25 01:14:41.995 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.actor
+	    ADD CONSTRAINT actor_pkey PRIMARY KEY (actor_id);
+2026-03-25 01:14:41.996 UTC [9964] ERROR:  multiple primary keys for table "address" are not allowed
+2026-03-25 01:14:41.996 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.address
+	    ADD CONSTRAINT address_pkey PRIMARY KEY (address_id);
+2026-03-25 01:14:41.996 UTC [9964] ERROR:  multiple primary keys for table "category" are not allowed
+2026-03-25 01:14:41.996 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.category
+	    ADD CONSTRAINT category_pkey PRIMARY KEY (category_id);
+2026-03-25 01:14:41.996 UTC [9964] ERROR:  multiple primary keys for table "city" are not allowed
+2026-03-25 01:14:41.996 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.city
+	    ADD CONSTRAINT city_pkey PRIMARY KEY (city_id);
+2026-03-25 01:14:41.996 UTC [9964] ERROR:  multiple primary keys for table "country" are not allowed
+2026-03-25 01:14:41.996 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.country
+	    ADD CONSTRAINT country_pkey PRIMARY KEY (country_id);
+2026-03-25 01:14:41.997 UTC [9964] ERROR:  multiple primary keys for table "customer" are not allowed
+2026-03-25 01:14:41.997 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.customer
+	    ADD CONSTRAINT customer_pkey PRIMARY KEY (customer_id);
+2026-03-25 01:14:41.997 UTC [9964] ERROR:  multiple primary keys for table "film_actor" are not allowed
+2026-03-25 01:14:41.997 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.film_actor
+	    ADD CONSTRAINT film_actor_pkey PRIMARY KEY (actor_id, film_id);
+2026-03-25 01:14:41.997 UTC [9964] ERROR:  multiple primary keys for table "film_category" are not allowed
+2026-03-25 01:14:41.997 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.film_category
+	    ADD CONSTRAINT film_category_pkey PRIMARY KEY (film_id, category_id);
+2026-03-25 01:14:41.998 UTC [9964] ERROR:  multiple primary keys for table "film" are not allowed
+2026-03-25 01:14:41.998 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.film
+	    ADD CONSTRAINT film_pkey PRIMARY KEY (film_id);
+2026-03-25 01:14:41.998 UTC [9964] ERROR:  multiple primary keys for table "inventory" are not allowed
+2026-03-25 01:14:41.998 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.inventory
+	    ADD CONSTRAINT inventory_pkey PRIMARY KEY (inventory_id);
+2026-03-25 01:14:41.998 UTC [9964] ERROR:  multiple primary keys for table "language" are not allowed
+2026-03-25 01:14:41.998 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.language
+	    ADD CONSTRAINT language_pkey PRIMARY KEY (language_id);
+2026-03-25 01:14:41.999 UTC [9964] ERROR:  multiple primary keys for table "payment" are not allowed
+2026-03-25 01:14:41.999 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment
+	    ADD CONSTRAINT payment_pkey PRIMARY KEY (payment_date, payment_id);
+2026-03-25 01:14:41.999 UTC [9964] ERROR:  multiple primary keys for table "payment_p2022_01" are not allowed
+2026-03-25 01:14:41.999 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment_p2022_01
+	    ADD CONSTRAINT payment_p2022_01_pkey PRIMARY KEY (payment_date, payment_id);
+2026-03-25 01:14:41.999 UTC [9964] ERROR:  multiple primary keys for table "payment_p2022_02" are not allowed
+2026-03-25 01:14:41.999 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment_p2022_02
+	    ADD CONSTRAINT payment_p2022_02_pkey PRIMARY KEY (payment_date, payment_id);
+2026-03-25 01:14:42.000 UTC [9964] ERROR:  multiple primary keys for table "payment_p2022_03" are not allowed
+2026-03-25 01:14:42.000 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment_p2022_03
+	    ADD CONSTRAINT payment_p2022_03_pkey PRIMARY KEY (payment_date, payment_id);
+2026-03-25 01:14:42.000 UTC [9964] ERROR:  multiple primary keys for table "payment_p2022_04" are not allowed
+2026-03-25 01:14:42.000 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment_p2022_04
+	    ADD CONSTRAINT payment_p2022_04_pkey PRIMARY KEY (payment_date, payment_id);
+2026-03-25 01:14:42.000 UTC [9964] ERROR:  multiple primary keys for table "payment_p2022_05" are not allowed
+2026-03-25 01:14:42.000 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment_p2022_05
+	    ADD CONSTRAINT payment_p2022_05_pkey PRIMARY KEY (payment_date, payment_id);
+2026-03-25 01:14:42.001 UTC [9964] ERROR:  multiple primary keys for table "payment_p2022_06" are not allowed
+2026-03-25 01:14:42.001 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment_p2022_06
+	    ADD CONSTRAINT payment_p2022_06_pkey PRIMARY KEY (payment_date, payment_id);
+2026-03-25 01:14:42.001 UTC [9964] ERROR:  multiple primary keys for table "payment_p2022_07" are not allowed
+2026-03-25 01:14:42.001 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment_p2022_07
+	    ADD CONSTRAINT payment_p2022_07_pkey PRIMARY KEY (payment_date, payment_id);
+2026-03-25 01:14:42.001 UTC [9964] ERROR:  multiple primary keys for table "rental" are not allowed
+2026-03-25 01:14:42.001 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.rental
+	    ADD CONSTRAINT rental_pkey PRIMARY KEY (rental_id);
+2026-03-25 01:14:42.001 UTC [9964] ERROR:  multiple primary keys for table "staff" are not allowed
+2026-03-25 01:14:42.001 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.staff
+	    ADD CONSTRAINT staff_pkey PRIMARY KEY (staff_id);
+2026-03-25 01:14:42.002 UTC [9964] ERROR:  multiple primary keys for table "store" are not allowed
+2026-03-25 01:14:42.002 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.store
+	    ADD CONSTRAINT store_pkey PRIMARY KEY (store_id);
+2026-03-25 01:14:42.002 UTC [9964] ERROR:  relation "film_fulltext_idx" already exists
+2026-03-25 01:14:42.002 UTC [9964] STATEMENT:  CREATE INDEX film_fulltext_idx ON public.film USING gist (fulltext);
+2026-03-25 01:14:42.002 UTC [9964] ERROR:  relation "idx_actor_last_name" already exists
+2026-03-25 01:14:42.002 UTC [9964] STATEMENT:  CREATE INDEX idx_actor_last_name ON public.actor USING btree (last_name);
+2026-03-25 01:14:42.003 UTC [9964] ERROR:  relation "idx_fk_address_id" already exists
+2026-03-25 01:14:42.003 UTC [9964] STATEMENT:  CREATE INDEX idx_fk_address_id ON public.customer USING btree (address_id);
+2026-03-25 01:14:42.003 UTC [9964] ERROR:  relation "idx_fk_city_id" already exists
+2026-03-25 01:14:42.003 UTC [9964] STATEMENT:  CREATE INDEX idx_fk_city_id ON public.address USING btree (city_id);
+2026-03-25 01:14:42.003 UTC [9964] ERROR:  relation "idx_fk_country_id" already exists
+2026-03-25 01:14:42.003 UTC [9964] STATEMENT:  CREATE INDEX idx_fk_country_id ON public.city USING btree (country_id);
+2026-03-25 01:14:42.003 UTC [9964] ERROR:  relation "idx_fk_film_id" already exists
+2026-03-25 01:14:42.003 UTC [9964] STATEMENT:  CREATE INDEX idx_fk_film_id ON public.film_actor USING btree (film_id);
+2026-03-25 01:14:42.004 UTC [9964] ERROR:  relation "idx_fk_inventory_id" already exists
+2026-03-25 01:14:42.004 UTC [9964] STATEMENT:  CREATE INDEX idx_fk_inventory_id ON public.rental USING btree (inventory_id);
+2026-03-25 01:14:42.004 UTC [9964] ERROR:  relation "idx_fk_language_id" already exists
+2026-03-25 01:14:42.004 UTC [9964] STATEMENT:  CREATE INDEX idx_fk_language_id ON public.film USING btree (language_id);
+2026-03-25 01:14:42.004 UTC [9964] ERROR:  relation "idx_fk_original_language_id" already exists
+2026-03-25 01:14:42.004 UTC [9964] STATEMENT:  CREATE INDEX idx_fk_original_language_id ON public.film USING btree (original_language_id);
+2026-03-25 01:14:42.004 UTC [9964] ERROR:  relation "idx_fk_payment_p2022_01_customer_id" already exists
+2026-03-25 01:14:42.004 UTC [9964] STATEMENT:  CREATE INDEX idx_fk_payment_p2022_01_customer_id ON public.payment_p2022_01 USING btree (customer_id);
+2026-03-25 01:14:42.004 UTC [9964] ERROR:  relation "idx_fk_payment_p2022_01_staff_id" already exists
+2026-03-25 01:14:42.004 UTC [9964] STATEMENT:  CREATE INDEX idx_fk_payment_p2022_01_staff_id ON public.payment_p2022_01 USING btree (staff_id);
+2026-03-25 01:14:42.005 UTC [9964] ERROR:  relation "idx_fk_payment_p2022_02_customer_id" already exists
+2026-03-25 01:14:42.005 UTC [9964] STATEMENT:  CREATE INDEX idx_fk_payment_p2022_02_customer_id ON public.payment_p2022_02 USING btree (customer_id);
+2026-03-25 01:14:42.005 UTC [9964] ERROR:  relation "idx_fk_payment_p2022_02_staff_id" already exists
+2026-03-25 01:14:42.005 UTC [9964] STATEMENT:  CREATE INDEX idx_fk_payment_p2022_02_staff_id ON public.payment_p2022_02 USING btree (staff_id);
+2026-03-25 01:14:42.005 UTC [9964] ERROR:  relation "idx_fk_payment_p2022_03_customer_id" already exists
+2026-03-25 01:14:42.005 UTC [9964] STATEMENT:  CREATE INDEX idx_fk_payment_p2022_03_customer_id ON public.payment_p2022_03 USING btree (customer_id);
+2026-03-25 01:14:42.005 UTC [9964] ERROR:  relation "idx_fk_payment_p2022_03_staff_id" already exists
+2026-03-25 01:14:42.005 UTC [9964] STATEMENT:  CREATE INDEX idx_fk_payment_p2022_03_staff_id ON public.payment_p2022_03 USING btree (staff_id);
+2026-03-25 01:14:42.005 UTC [9964] ERROR:  relation "idx_fk_payment_p2022_04_customer_id" already exists
+2026-03-25 01:14:42.005 UTC [9964] STATEMENT:  CREATE INDEX idx_fk_payment_p2022_04_customer_id ON public.payment_p2022_04 USING btree (customer_id);
+2026-03-25 01:14:42.005 UTC [9964] ERROR:  relation "idx_fk_payment_p2022_04_staff_id" already exists
+2026-03-25 01:14:42.005 UTC [9964] STATEMENT:  CREATE INDEX idx_fk_payment_p2022_04_staff_id ON public.payment_p2022_04 USING btree (staff_id);
+2026-03-25 01:14:42.006 UTC [9964] ERROR:  relation "idx_fk_payment_p2022_05_customer_id" already exists
+2026-03-25 01:14:42.006 UTC [9964] STATEMENT:  CREATE INDEX idx_fk_payment_p2022_05_customer_id ON public.payment_p2022_05 USING btree (customer_id);
+2026-03-25 01:14:42.006 UTC [9964] ERROR:  relation "idx_fk_payment_p2022_05_staff_id" already exists
+2026-03-25 01:14:42.006 UTC [9964] STATEMENT:  CREATE INDEX idx_fk_payment_p2022_05_staff_id ON public.payment_p2022_05 USING btree (staff_id);
+2026-03-25 01:14:42.006 UTC [9964] ERROR:  relation "idx_fk_payment_p2022_06_customer_id" already exists
+2026-03-25 01:14:42.006 UTC [9964] STATEMENT:  CREATE INDEX idx_fk_payment_p2022_06_customer_id ON public.payment_p2022_06 USING btree (customer_id);
+2026-03-25 01:14:42.006 UTC [9964] ERROR:  relation "idx_fk_payment_p2022_06_staff_id" already exists
+2026-03-25 01:14:42.006 UTC [9964] STATEMENT:  CREATE INDEX idx_fk_payment_p2022_06_staff_id ON public.payment_p2022_06 USING btree (staff_id);
+2026-03-25 01:14:42.006 UTC [9964] ERROR:  relation "idx_fk_store_id" already exists
+2026-03-25 01:14:42.006 UTC [9964] STATEMENT:  CREATE INDEX idx_fk_store_id ON public.customer USING btree (store_id);
+2026-03-25 01:14:42.006 UTC [9964] ERROR:  relation "idx_last_name" already exists
+2026-03-25 01:14:42.006 UTC [9964] STATEMENT:  CREATE INDEX idx_last_name ON public.customer USING btree (last_name);
+2026-03-25 01:14:42.007 UTC [9964] ERROR:  relation "idx_store_id_film_id" already exists
+2026-03-25 01:14:42.007 UTC [9964] STATEMENT:  CREATE INDEX idx_store_id_film_id ON public.inventory USING btree (store_id, film_id);
+2026-03-25 01:14:42.007 UTC [9964] ERROR:  relation "idx_title" already exists
+2026-03-25 01:14:42.007 UTC [9964] STATEMENT:  CREATE INDEX idx_title ON public.film USING btree (title);
+2026-03-25 01:14:42.007 UTC [9964] ERROR:  relation "idx_unq_manager_staff_id" already exists
+2026-03-25 01:14:42.007 UTC [9964] STATEMENT:  CREATE UNIQUE INDEX idx_unq_manager_staff_id ON public.store USING btree (manager_staff_id);
+2026-03-25 01:14:42.007 UTC [9964] ERROR:  relation "idx_unq_rental_rental_date_inventory_id_customer_id" already exists
+2026-03-25 01:14:42.007 UTC [9964] STATEMENT:  CREATE UNIQUE INDEX idx_unq_rental_rental_date_inventory_id_customer_id ON public.rental USING btree (rental_date, inventory_id, customer_id);
+2026-03-25 01:14:42.007 UTC [9964] ERROR:  relation "payment_p2022_01_customer_id_idx" already exists
+2026-03-25 01:14:42.007 UTC [9964] STATEMENT:  CREATE INDEX payment_p2022_01_customer_id_idx ON public.payment_p2022_01 USING btree (customer_id);
+2026-03-25 01:14:42.008 UTC [9964] ERROR:  relation "payment_p2022_02_customer_id_idx" already exists
+2026-03-25 01:14:42.008 UTC [9964] STATEMENT:  CREATE INDEX payment_p2022_02_customer_id_idx ON public.payment_p2022_02 USING btree (customer_id);
+2026-03-25 01:14:42.008 UTC [9964] ERROR:  relation "payment_p2022_03_customer_id_idx" already exists
+2026-03-25 01:14:42.008 UTC [9964] STATEMENT:  CREATE INDEX payment_p2022_03_customer_id_idx ON public.payment_p2022_03 USING btree (customer_id);
+2026-03-25 01:14:42.008 UTC [9964] ERROR:  relation "payment_p2022_04_customer_id_idx" already exists
+2026-03-25 01:14:42.008 UTC [9964] STATEMENT:  CREATE INDEX payment_p2022_04_customer_id_idx ON public.payment_p2022_04 USING btree (customer_id);
+2026-03-25 01:14:42.008 UTC [9964] ERROR:  relation "payment_p2022_05_customer_id_idx" already exists
+2026-03-25 01:14:42.008 UTC [9964] STATEMENT:  CREATE INDEX payment_p2022_05_customer_id_idx ON public.payment_p2022_05 USING btree (customer_id);
+2026-03-25 01:14:42.008 UTC [9964] ERROR:  relation "payment_p2022_06_customer_id_idx" already exists
+2026-03-25 01:14:42.008 UTC [9964] STATEMENT:  CREATE INDEX payment_p2022_06_customer_id_idx ON public.payment_p2022_06 USING btree (customer_id);
+2026-03-25 01:14:42.008 UTC [9964] ERROR:  relation "rental_category" already exists
+2026-03-25 01:14:42.008 UTC [9964] STATEMENT:  CREATE UNIQUE INDEX rental_category ON public.rental_by_category USING btree (category);
+2026-03-25 01:14:42.014 UTC [9964] ERROR:  trigger "film_fulltext_trigger" for relation "film" already exists
+2026-03-25 01:14:42.014 UTC [9964] STATEMENT:  CREATE TRIGGER film_fulltext_trigger BEFORE INSERT OR UPDATE ON public.film FOR EACH ROW EXECUTE FUNCTION tsvector_update_trigger('fulltext', 'pg_catalog.english', 'title', 'description');
+2026-03-25 01:14:42.014 UTC [9964] ERROR:  trigger "last_updated" for relation "actor" already exists
+2026-03-25 01:14:42.014 UTC [9964] STATEMENT:  CREATE TRIGGER last_updated BEFORE UPDATE ON public.actor FOR EACH ROW EXECUTE FUNCTION public.last_updated();
+2026-03-25 01:14:42.014 UTC [9964] ERROR:  trigger "last_updated" for relation "address" already exists
+2026-03-25 01:14:42.014 UTC [9964] STATEMENT:  CREATE TRIGGER last_updated BEFORE UPDATE ON public.address FOR EACH ROW EXECUTE FUNCTION public.last_updated();
+2026-03-25 01:14:42.014 UTC [9964] ERROR:  trigger "last_updated" for relation "category" already exists
+2026-03-25 01:14:42.014 UTC [9964] STATEMENT:  CREATE TRIGGER last_updated BEFORE UPDATE ON public.category FOR EACH ROW EXECUTE FUNCTION public.last_updated();
+2026-03-25 01:14:42.015 UTC [9964] ERROR:  trigger "last_updated" for relation "city" already exists
+2026-03-25 01:14:42.015 UTC [9964] STATEMENT:  CREATE TRIGGER last_updated BEFORE UPDATE ON public.city FOR EACH ROW EXECUTE FUNCTION public.last_updated();
+2026-03-25 01:14:42.015 UTC [9964] ERROR:  trigger "last_updated" for relation "country" already exists
+2026-03-25 01:14:42.015 UTC [9964] STATEMENT:  CREATE TRIGGER last_updated BEFORE UPDATE ON public.country FOR EACH ROW EXECUTE FUNCTION public.last_updated();
+2026-03-25 01:14:42.015 UTC [9964] ERROR:  trigger "last_updated" for relation "customer" already exists
+2026-03-25 01:14:42.015 UTC [9964] STATEMENT:  CREATE TRIGGER last_updated BEFORE UPDATE ON public.customer FOR EACH ROW EXECUTE FUNCTION public.last_updated();
+2026-03-25 01:14:42.015 UTC [9964] ERROR:  trigger "last_updated" for relation "film" already exists
+2026-03-25 01:14:42.015 UTC [9964] STATEMENT:  CREATE TRIGGER last_updated BEFORE UPDATE ON public.film FOR EACH ROW EXECUTE FUNCTION public.last_updated();
+2026-03-25 01:14:42.015 UTC [9964] ERROR:  trigger "last_updated" for relation "film_actor" already exists
+2026-03-25 01:14:42.015 UTC [9964] STATEMENT:  CREATE TRIGGER last_updated BEFORE UPDATE ON public.film_actor FOR EACH ROW EXECUTE FUNCTION public.last_updated();
+2026-03-25 01:14:42.015 UTC [9964] ERROR:  trigger "last_updated" for relation "film_category" already exists
+2026-03-25 01:14:42.015 UTC [9964] STATEMENT:  CREATE TRIGGER last_updated BEFORE UPDATE ON public.film_category FOR EACH ROW EXECUTE FUNCTION public.last_updated();
+2026-03-25 01:14:42.016 UTC [9964] ERROR:  trigger "last_updated" for relation "inventory" already exists
+2026-03-25 01:14:42.016 UTC [9964] STATEMENT:  CREATE TRIGGER last_updated BEFORE UPDATE ON public.inventory FOR EACH ROW EXECUTE FUNCTION public.last_updated();
+2026-03-25 01:14:42.016 UTC [9964] ERROR:  trigger "last_updated" for relation "language" already exists
+2026-03-25 01:14:42.016 UTC [9964] STATEMENT:  CREATE TRIGGER last_updated BEFORE UPDATE ON public.language FOR EACH ROW EXECUTE FUNCTION public.last_updated();
+2026-03-25 01:14:42.016 UTC [9964] ERROR:  trigger "last_updated" for relation "rental" already exists
+2026-03-25 01:14:42.016 UTC [9964] STATEMENT:  CREATE TRIGGER last_updated BEFORE UPDATE ON public.rental FOR EACH ROW EXECUTE FUNCTION public.last_updated();
+2026-03-25 01:14:42.016 UTC [9964] ERROR:  trigger "last_updated" for relation "staff" already exists
+2026-03-25 01:14:42.016 UTC [9964] STATEMENT:  CREATE TRIGGER last_updated BEFORE UPDATE ON public.staff FOR EACH ROW EXECUTE FUNCTION public.last_updated();
+2026-03-25 01:14:42.016 UTC [9964] ERROR:  trigger "last_updated" for relation "store" already exists
+2026-03-25 01:14:42.016 UTC [9964] STATEMENT:  CREATE TRIGGER last_updated BEFORE UPDATE ON public.store FOR EACH ROW EXECUTE FUNCTION public.last_updated();
+2026-03-25 01:14:42.016 UTC [9964] ERROR:  constraint "address_city_id_fkey" for relation "address" already exists
+2026-03-25 01:14:42.016 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.address
+	    ADD CONSTRAINT address_city_id_fkey FOREIGN KEY (city_id) REFERENCES public.city(city_id) ON UPDATE CASCADE ON DELETE RESTRICT;
+2026-03-25 01:14:42.017 UTC [9964] ERROR:  constraint "city_country_id_fkey" for relation "city" already exists
+2026-03-25 01:14:42.017 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.city
+	    ADD CONSTRAINT city_country_id_fkey FOREIGN KEY (country_id) REFERENCES public.country(country_id) ON UPDATE CASCADE ON DELETE RESTRICT;
+2026-03-25 01:14:42.017 UTC [9964] ERROR:  constraint "customer_address_id_fkey" for relation "customer" already exists
+2026-03-25 01:14:42.017 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.customer
+	    ADD CONSTRAINT customer_address_id_fkey FOREIGN KEY (address_id) REFERENCES public.address(address_id) ON UPDATE CASCADE ON DELETE RESTRICT;
+2026-03-25 01:14:42.017 UTC [9964] ERROR:  constraint "customer_store_id_fkey" for relation "customer" already exists
+2026-03-25 01:14:42.017 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.customer
+	    ADD CONSTRAINT customer_store_id_fkey FOREIGN KEY (store_id) REFERENCES public.store(store_id) ON UPDATE CASCADE ON DELETE RESTRICT;
+2026-03-25 01:14:42.017 UTC [9964] ERROR:  constraint "film_actor_actor_id_fkey" for relation "film_actor" already exists
+2026-03-25 01:14:42.017 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.film_actor
+	    ADD CONSTRAINT film_actor_actor_id_fkey FOREIGN KEY (actor_id) REFERENCES public.actor(actor_id) ON UPDATE CASCADE ON DELETE RESTRICT;
+2026-03-25 01:14:42.018 UTC [9964] ERROR:  constraint "film_actor_film_id_fkey" for relation "film_actor" already exists
+2026-03-25 01:14:42.018 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.film_actor
+	    ADD CONSTRAINT film_actor_film_id_fkey FOREIGN KEY (film_id) REFERENCES public.film(film_id) ON UPDATE CASCADE ON DELETE RESTRICT;
+2026-03-25 01:14:42.018 UTC [9964] ERROR:  constraint "film_category_category_id_fkey" for relation "film_category" already exists
+2026-03-25 01:14:42.018 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.film_category
+	    ADD CONSTRAINT film_category_category_id_fkey FOREIGN KEY (category_id) REFERENCES public.category(category_id) ON UPDATE CASCADE ON DELETE RESTRICT;
+2026-03-25 01:14:42.018 UTC [9964] ERROR:  constraint "film_category_film_id_fkey" for relation "film_category" already exists
+2026-03-25 01:14:42.018 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.film_category
+	    ADD CONSTRAINT film_category_film_id_fkey FOREIGN KEY (film_id) REFERENCES public.film(film_id) ON UPDATE CASCADE ON DELETE RESTRICT;
+2026-03-25 01:14:42.018 UTC [9964] ERROR:  constraint "film_language_id_fkey" for relation "film" already exists
+2026-03-25 01:14:42.018 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.film
+	    ADD CONSTRAINT film_language_id_fkey FOREIGN KEY (language_id) REFERENCES public.language(language_id) ON UPDATE CASCADE ON DELETE RESTRICT;
+2026-03-25 01:14:42.019 UTC [9964] ERROR:  constraint "film_original_language_id_fkey" for relation "film" already exists
+2026-03-25 01:14:42.019 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.film
+	    ADD CONSTRAINT film_original_language_id_fkey FOREIGN KEY (original_language_id) REFERENCES public.language(language_id) ON UPDATE CASCADE ON DELETE RESTRICT;
+2026-03-25 01:14:42.019 UTC [9964] ERROR:  constraint "inventory_film_id_fkey" for relation "inventory" already exists
+2026-03-25 01:14:42.019 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.inventory
+	    ADD CONSTRAINT inventory_film_id_fkey FOREIGN KEY (film_id) REFERENCES public.film(film_id) ON UPDATE CASCADE ON DELETE RESTRICT;
+2026-03-25 01:14:42.019 UTC [9964] ERROR:  constraint "inventory_store_id_fkey" for relation "inventory" already exists
+2026-03-25 01:14:42.019 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.inventory
+	    ADD CONSTRAINT inventory_store_id_fkey FOREIGN KEY (store_id) REFERENCES public.store(store_id) ON UPDATE CASCADE ON DELETE RESTRICT;
+2026-03-25 01:14:42.019 UTC [9964] ERROR:  constraint "payment_p2022_01_customer_id_fkey" for relation "payment_p2022_01" already exists
+2026-03-25 01:14:42.019 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment_p2022_01
+	    ADD CONSTRAINT payment_p2022_01_customer_id_fkey FOREIGN KEY (customer_id) REFERENCES public.customer(customer_id);
+2026-03-25 01:14:42.020 UTC [9964] ERROR:  constraint "payment_p2022_01_rental_id_fkey" for relation "payment_p2022_01" already exists
+2026-03-25 01:14:42.020 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment_p2022_01
+	    ADD CONSTRAINT payment_p2022_01_rental_id_fkey FOREIGN KEY (rental_id) REFERENCES public.rental(rental_id);
+2026-03-25 01:14:42.020 UTC [9964] ERROR:  constraint "payment_p2022_01_staff_id_fkey" for relation "payment_p2022_01" already exists
+2026-03-25 01:14:42.020 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment_p2022_01
+	    ADD CONSTRAINT payment_p2022_01_staff_id_fkey FOREIGN KEY (staff_id) REFERENCES public.staff(staff_id);
+2026-03-25 01:14:42.020 UTC [9964] ERROR:  constraint "payment_p2022_02_customer_id_fkey" for relation "payment_p2022_02" already exists
+2026-03-25 01:14:42.020 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment_p2022_02
+	    ADD CONSTRAINT payment_p2022_02_customer_id_fkey FOREIGN KEY (customer_id) REFERENCES public.customer(customer_id);
+2026-03-25 01:14:42.020 UTC [9964] ERROR:  constraint "payment_p2022_02_rental_id_fkey" for relation "payment_p2022_02" already exists
+2026-03-25 01:14:42.020 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment_p2022_02
+	    ADD CONSTRAINT payment_p2022_02_rental_id_fkey FOREIGN KEY (rental_id) REFERENCES public.rental(rental_id);
+2026-03-25 01:14:42.021 UTC [9964] ERROR:  constraint "payment_p2022_02_staff_id_fkey" for relation "payment_p2022_02" already exists
+2026-03-25 01:14:42.021 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment_p2022_02
+	    ADD CONSTRAINT payment_p2022_02_staff_id_fkey FOREIGN KEY (staff_id) REFERENCES public.staff(staff_id);
+2026-03-25 01:14:42.021 UTC [9964] ERROR:  constraint "payment_p2022_03_customer_id_fkey" for relation "payment_p2022_03" already exists
+2026-03-25 01:14:42.021 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment_p2022_03
+	    ADD CONSTRAINT payment_p2022_03_customer_id_fkey FOREIGN KEY (customer_id) REFERENCES public.customer(customer_id);
+2026-03-25 01:14:42.021 UTC [9964] ERROR:  constraint "payment_p2022_03_rental_id_fkey" for relation "payment_p2022_03" already exists
+2026-03-25 01:14:42.021 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment_p2022_03
+	    ADD CONSTRAINT payment_p2022_03_rental_id_fkey FOREIGN KEY (rental_id) REFERENCES public.rental(rental_id);
+2026-03-25 01:14:42.021 UTC [9964] ERROR:  constraint "payment_p2022_03_staff_id_fkey" for relation "payment_p2022_03" already exists
+2026-03-25 01:14:42.021 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment_p2022_03
+	    ADD CONSTRAINT payment_p2022_03_staff_id_fkey FOREIGN KEY (staff_id) REFERENCES public.staff(staff_id);
+2026-03-25 01:14:42.022 UTC [9964] ERROR:  constraint "payment_p2022_04_customer_id_fkey" for relation "payment_p2022_04" already exists
+2026-03-25 01:14:42.022 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment_p2022_04
+	    ADD CONSTRAINT payment_p2022_04_customer_id_fkey FOREIGN KEY (customer_id) REFERENCES public.customer(customer_id);
+2026-03-25 01:14:42.022 UTC [9964] ERROR:  constraint "payment_p2022_04_rental_id_fkey" for relation "payment_p2022_04" already exists
+2026-03-25 01:14:42.022 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment_p2022_04
+	    ADD CONSTRAINT payment_p2022_04_rental_id_fkey FOREIGN KEY (rental_id) REFERENCES public.rental(rental_id);
+2026-03-25 01:14:42.022 UTC [9964] ERROR:  constraint "payment_p2022_04_staff_id_fkey" for relation "payment_p2022_04" already exists
+2026-03-25 01:14:42.022 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment_p2022_04
+	    ADD CONSTRAINT payment_p2022_04_staff_id_fkey FOREIGN KEY (staff_id) REFERENCES public.staff(staff_id);
+2026-03-25 01:14:42.022 UTC [9964] ERROR:  constraint "payment_p2022_05_customer_id_fkey" for relation "payment_p2022_05" already exists
+2026-03-25 01:14:42.022 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment_p2022_05
+	    ADD CONSTRAINT payment_p2022_05_customer_id_fkey FOREIGN KEY (customer_id) REFERENCES public.customer(customer_id);
+2026-03-25 01:14:42.022 UTC [9964] ERROR:  constraint "payment_p2022_05_rental_id_fkey" for relation "payment_p2022_05" already exists
+2026-03-25 01:14:42.022 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment_p2022_05
+	    ADD CONSTRAINT payment_p2022_05_rental_id_fkey FOREIGN KEY (rental_id) REFERENCES public.rental(rental_id);
+2026-03-25 01:14:42.023 UTC [9964] ERROR:  constraint "payment_p2022_05_staff_id_fkey" for relation "payment_p2022_05" already exists
+2026-03-25 01:14:42.023 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment_p2022_05
+	    ADD CONSTRAINT payment_p2022_05_staff_id_fkey FOREIGN KEY (staff_id) REFERENCES public.staff(staff_id);
+2026-03-25 01:14:42.023 UTC [9964] ERROR:  constraint "payment_p2022_06_customer_id_fkey" for relation "payment_p2022_06" already exists
+2026-03-25 01:14:42.023 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment_p2022_06
+	    ADD CONSTRAINT payment_p2022_06_customer_id_fkey FOREIGN KEY (customer_id) REFERENCES public.customer(customer_id);
+2026-03-25 01:14:42.023 UTC [9964] ERROR:  constraint "payment_p2022_06_rental_id_fkey" for relation "payment_p2022_06" already exists
+2026-03-25 01:14:42.023 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment_p2022_06
+	    ADD CONSTRAINT payment_p2022_06_rental_id_fkey FOREIGN KEY (rental_id) REFERENCES public.rental(rental_id);
+2026-03-25 01:14:42.023 UTC [9964] ERROR:  constraint "payment_p2022_06_staff_id_fkey" for relation "payment_p2022_06" already exists
+2026-03-25 01:14:42.023 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.payment_p2022_06
+	    ADD CONSTRAINT payment_p2022_06_staff_id_fkey FOREIGN KEY (staff_id) REFERENCES public.staff(staff_id);
+2026-03-25 01:14:42.024 UTC [9964] ERROR:  constraint "rental_customer_id_fkey" for relation "rental" already exists
+2026-03-25 01:14:42.024 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.rental
+	    ADD CONSTRAINT rental_customer_id_fkey FOREIGN KEY (customer_id) REFERENCES public.customer(customer_id) ON UPDATE CASCADE ON DELETE RESTRICT;
+2026-03-25 01:14:42.024 UTC [9964] ERROR:  constraint "rental_inventory_id_fkey" for relation "rental" already exists
+2026-03-25 01:14:42.024 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.rental
+	    ADD CONSTRAINT rental_inventory_id_fkey FOREIGN KEY (inventory_id) REFERENCES public.inventory(inventory_id) ON UPDATE CASCADE ON DELETE RESTRICT;
+2026-03-25 01:14:42.024 UTC [9964] ERROR:  constraint "rental_staff_id_fkey" for relation "rental" already exists
+2026-03-25 01:14:42.024 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.rental
+	    ADD CONSTRAINT rental_staff_id_fkey FOREIGN KEY (staff_id) REFERENCES public.staff(staff_id) ON UPDATE CASCADE ON DELETE RESTRICT;
+2026-03-25 01:14:42.024 UTC [9964] ERROR:  constraint "staff_address_id_fkey" for relation "staff" already exists
+2026-03-25 01:14:42.024 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.staff
+	    ADD CONSTRAINT staff_address_id_fkey FOREIGN KEY (address_id) REFERENCES public.address(address_id) ON UPDATE CASCADE ON DELETE RESTRICT;
+2026-03-25 01:14:42.024 UTC [9964] ERROR:  constraint "staff_store_id_fkey" for relation "staff" already exists
+2026-03-25 01:14:42.024 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.staff
+	    ADD CONSTRAINT staff_store_id_fkey FOREIGN KEY (store_id) REFERENCES public.store(store_id);
+2026-03-25 01:14:42.025 UTC [9964] ERROR:  constraint "store_address_id_fkey" for relation "store" already exists
+2026-03-25 01:14:42.025 UTC [9964] STATEMENT:  ALTER TABLE ONLY public.store
+	    ADD CONSTRAINT store_address_id_fkey FOREIGN KEY (address_id) REFERENCES public.address(address_id) ON UPDATE CASCADE ON DELETE RESTRICT;
